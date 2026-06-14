@@ -21,13 +21,12 @@ This repository is a distilled, open-source portfolio component extracted from a
 
 Clone the repository and instantiate the local environment to automatically fetch all required dependencies (such as `LinearAlgebra`, `SparseArrays`, and `Plots`).
 
-```julia
 # Open the Julia REPL and type:
 julia> ]
 (@v1.x) pkg> activate .
 (BiodegradableStent) pkg> instantiate
 
-📊 Examples and Visual Results
+## 📊 Examples and Visual Results
 The `examples/` directory contains ready-to-run scripts that demonstrate the capabilities of the module. Visual outputs are automatically routed to the `examples/results/` directory using headless rendering.
 
 1. Auxetic Topology Generation
