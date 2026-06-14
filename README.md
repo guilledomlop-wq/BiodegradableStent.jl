@@ -51,7 +51,7 @@ Demonstrates the HPC SparseArrays solver handling a purely elastic expansion. Th
 3. Material Dispatch & Degradation Kinetics
 Simulates 180 days of in-vivo degradation. Demonstrates Multiple Dispatch routing the calculate_corrosion_step function to distinct kinetic models based strictly on the material type provided (MagnesiumWE43 vs ZincPure).
 
-![Dispatch and Degradation](examples/results/material_dispatch.png)
+![Dispatch and Degradation](examples/results/material_degradation.png)
 
 # Run from the terminal:
 # julia examples/03_material_dispatch.jl
