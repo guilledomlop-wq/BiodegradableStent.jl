@@ -47,7 +47,7 @@ Simulates 180 days of in-vivo degradation. Demonstrates Multiple Dispatch routin
 
 🧪 Testing
 The package includes a comprehensive, zero-allocation mathematical test suite validating material type promotion, HPC memory pre-allocation, stiffness assembly dimensions, and physical bounds.
-# Run the test suite from the REPL:
+Run the test suite from the REPL:
 julia> ]
 (BiodegradableStent) pkg> test
 
