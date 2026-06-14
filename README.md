@@ -26,21 +26,33 @@ Clone the repository and instantiate the local environment to automatically fetc
 julia> ]
 (@v1.x) pkg> activate .
 (BiodegradableStent) pkg> instantiate
-📊 Examples and Visual Results
-The examples/ directory contains ready-to-run scripts that demonstrate the capabilities of the module. Visual outputs are automatically routed to the examples/results/ directory using headless rendering.
 
-1. Auxetic Topology Generation
+## 📊 Examples and Visual Results
+The `examples/` directory contains ready-to-run scripts that demonstrate the capabilities of the module. Visual outputs are automatically routed to the `examples/results/` directory using headless rendering.
+
+### 1. Auxetic Topology Generation
 Generates the foundational staggered honeycomb structure designed for a negative Poisson's ratio (expansion under tension).
+
+![Auxetic Stent Topology](examples/results/auxetic_mesh.png)
+
+```julia
 # Run from the terminal:
 # julia examples/01_auxetic_topology.jl
 
 2. Linear Elastic FEM Expansion
 Demonstrates the HPC SparseArrays solver handling a purely elastic expansion. The unique auxetic geometry expands radially when stretched axially.
+
+![Linear FEM expansion](examples/results/linear_expansion.png)
+
+```julia
 # Run from the terminal:
 # julia examples/02_linear_expansion.jl
 
 3. Material Dispatch & Degradation Kinetics
 Simulates 180 days of in-vivo degradation. Demonstrates Multiple Dispatch routing the calculate_corrosion_step function to distinct kinetic models based strictly on the material type provided (MagnesiumWE43 vs ZincPure).
+
+![Dispatch and Degradation](examples/results/material_dispatch.png)
+
 # Run from the terminal:
 # julia examples/03_material_dispatch.jl
 
