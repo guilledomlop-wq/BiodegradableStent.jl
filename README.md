@@ -21,7 +21,7 @@ This repository is a distilled, open-source portfolio component extracted from a
 
 Clone the repository and instantiate the local environment to automatically fetch all required dependencies (such as `LinearAlgebra`, `SparseArrays`, and `Plots`).
 
-# Open the Julia REPL and type:
+Open the Julia REPL and type:
 julia> ]
 (@v1.x) pkg> activate .
 (BiodegradableStent) pkg> instantiate
